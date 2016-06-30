@@ -1,8 +1,9 @@
 package singleton;
 
-import java.io.*;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -64,8 +65,9 @@ public class SingleClassMain {
         Singleton s4= (Singleton) objectInputStream.readObject();
 
         printObject("s4",s4);
+        
 
-
+        objectInputStream.close();
 
 
 
