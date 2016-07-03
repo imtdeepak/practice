@@ -3,5 +3,5 @@
 .project
 .settings
 .idea/
-deepak-pattern.iml
+*.iml
 
