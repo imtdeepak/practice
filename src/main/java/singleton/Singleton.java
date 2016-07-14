@@ -10,6 +10,14 @@ public class Singleton implements Serializable,Cloneable{
 
 //    private static Singleton oneInstance=null;
 
+//    public static Singleton getInstance()
+//    {
+//        return instance;
+//    }
+
+//    private Singleton(){
+//    }
+
     private static volatile  Singleton oneInstance=null;
 
     private Singleton() {
