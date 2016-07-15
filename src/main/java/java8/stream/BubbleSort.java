@@ -8,22 +8,27 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 /**
- * Created by byjumanikkan on 1/28/16.
+ * Created by 212550544 on 7/14/16.
  */
 public class BubbleSort {
 
-    private static void bubbleSort()
+    private static List<Integer> bubbleSort(List<Integer> unsorted)
     {
-        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
-        while(!list.isEmpty())
+
+        if(!unsorted.isEmpty())
         {
-            List<Integer> integers = list.stream().sorted(Comparator.comparing(Integer::intValue)).collect(toList());
+            List<Integer> integers = unsorted.stream().sorted(Comparator.comparing(Integer::intValue)).collect(toList());
+            return integers;
 
         }
+        return null;
     }
 
-    public static void main(String []args)
-    {
-         System.out.println(Runtime.getRuntime().availableProcessors());
+    public static void main(String []args){
+        List<Integer> list = new ArrayList<>(Arrays.asList(6,1,8,10,2,3,4,5,9));
+
+        System.out.println("UnSorted List="+list);
+        System.out.println("Sorted List="+bubbleSort(list));
+
     }
 }
