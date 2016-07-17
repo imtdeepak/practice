@@ -1,4 +1,4 @@
-package datastructure;
+package algo.problem;
 
 import java.util.Stack;
 import java.util.regex.Matcher;

@@ -1,91 +1,74 @@
 package merge;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
-/**
- * Created by byjumanikkan on 3/21/16.
- */
-public class MergeSort {
+public class MergeSort
+{
+    public static void main(String[] args)
+    {
+        //Unsorted array
+        Integer[] a = { 2, 6, 3, 5, 1 };
 
-    private static int[] merge(int[] arrayA, int[] arrayB) {
+        //Call merge sort
+        mergeSort(a);
 
-        int[] merged = new int[arrayA.length + arrayB.length];
-        int i = 0, j = 0, k = 0;
-
-        while (i < arrayA.length && j < arrayB.length) {
-            if (arrayA[i] < arrayB[j]) {
-                merged[k++] = arrayA[i++];
-            } else {
-                merged[k++] = arrayB[j++];
-            }
-        }
-
-        while (i < arrayA.length) {
-            merged[k++] = arrayA[i++];
-
-        }
-
-        while (j < arrayB.length) {
-            merged[k++] = arrayB[j++];
-        }
-        return merged;
+        //Check the output which is sorted array
+        System.out.println(Arrays.toString(a));
     }
 
-
-    private static List<Integer> merge(List<Integer> listA, List<Integer> listB) {
-
-        List<Integer> merged = new ArrayList<>();
-        Iterator<Integer> iteratorA = listA.iterator();
-        Iterator<Integer> iteratorB = listB.iterator();
-        Integer itemA = null;
-        Integer itemB = null;
-
-        while (iteratorA.hasNext() &&  iteratorB.hasNext()) {
-            if(itemA == null ){
-                itemA = iteratorA.next();
-            }
-            if(itemB == null ){
-                itemB = iteratorB.next();
-            }
-            if (itemA < itemB) {
-                merged.add(itemA);
-                itemA = null;
-            } else {
-                merged.add(itemB);
-                itemB = null;
-            }
-        }
-        if(itemA != null){
-            merged.add(itemA);
+    @SuppressWarnings("rawtypes")
+    public static Comparable[] mergeSort(Comparable[] list)
+    {
+        //If list is empty; no need to do anything
+        if (list.length <= 1) {
+            return list;
         }
 
-        if(itemB != null){
-            merged.add(itemB);
-        }
+        //Split the array in half in two parts
+        Comparable[] first = new Comparable[list.length / 2];
+        Comparable[] second = new Comparable[list.length - first.length];
+        System.arraycopy(list, 0, first, 0, first.length);
+        System.arraycopy(list, first.length, second, 0, second.length);
 
-        while (iteratorA.hasNext()) {
-            if(iteratorA.hasNext()) {
-                merged.add(iteratorA.next());
-            }else{
-                merged.add(iteratorB.next());
-            }
-        }
-        return merged;
+        //Sort each half recursively
+        mergeSort(first);
+        mergeSort(second);
+
+        //Merge both halves together, overwriting to original array
+        merge(first, second, list);
+        return list;
     }
 
-    public static void main(String[] args) {
-        int [] arrayA = {1,2,3,6,8,10};
-        int [] arrayB = {2,5,7,11};
-        int[] arrayC = merge(arrayA, arrayB);
-        for(int i : arrayC)
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+    private static void merge(Comparable[] first, Comparable[] second, Comparable[] result)
+    {
+        //Index Position in first array - starting with first element
+        int iFirst = 0;
+
+        //Index Position in second array - starting with first element
+        int iSecond = 0;
+
+        //Index Position in merged array - starting with first position
+        int iMerged = 0;
+
+        //Compare elements at iFirst and iSecond,
+        //and move smaller element at iMerged
+        while (iFirst < first.length && iSecond < second.length)
         {
-            System.out.println(i);
+            if (first[iFirst].compareTo(second[iSecond]) < 0)
+            {
+                result[iMerged] = first[iFirst];
+                iFirst++;
+            }
+            else
+            {
+                result[iMerged] = second[iSecond];
+                iSecond++;
+            }
+            iMerged++;
         }
-
-        List<Integer> merged = merge(Arrays.asList(1,2,3,6,8,10), Arrays.asList(2,5,7,11));
-        System.out.println(merged);
+        //copy remaining elements from both halves - each half will have already sorted elements
+        System.arraycopy(first, iFirst, result, iMerged, first.length - iFirst);
+        System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
     }
 }
