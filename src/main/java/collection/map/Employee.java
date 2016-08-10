@@ -1,7 +1,7 @@
 package collection.map;
 
 /**
- * Created by byjumanikkan on 2/18/16.
+ * Created by deepak.kumar on 2/18/16.
  */
 public class Employee {
     private String firstName;

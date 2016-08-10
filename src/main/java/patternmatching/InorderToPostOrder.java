@@ -3,7 +3,7 @@ package patternmatching;
 import java.util.Stack;
 
 /**
- * Created by byjumanikkan on 5/11/16.
+ * Created by deepak.kumar on 5/11/16.
  */
 public class InorderToPostOrder {
 

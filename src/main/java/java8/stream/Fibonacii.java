@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by byjumanikkan on 2/6/16.
+ * Created by deepak.kumar on 2/6/16.
  */
 public class Fibonacii {
     private static Map<Integer,Integer> fibSum=new HashMap<>();

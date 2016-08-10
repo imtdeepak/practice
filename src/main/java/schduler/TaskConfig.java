@@ -1,7 +1,7 @@
 package schduler;
 
 /**
- * Created by byjumanikkan on 3/3/16.
+ * Created by deepak.kumar on 3/3/16.
  */
 public class TaskConfig {
 

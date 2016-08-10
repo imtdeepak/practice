@@ -3,7 +3,7 @@ package magic;
 import java.util.*;
 
 /**
- * Created by byjumanikkan on 5/22/16.
+ * Created by deepak.kumar on 5/22/16.
  */
 public class MagicVowel {
 

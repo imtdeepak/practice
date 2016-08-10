@@ -3,7 +3,7 @@ package designpattern.filter;
 import java.util.List;
 
 /**
- * Created by byjumanikkan on 2/2/16.
+ * Created by deepak.kumar on 2/2/16.
  */
 public class AndCriteria implements Criteria {
     Criteria[] criterias;

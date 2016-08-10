@@ -1,7 +1,7 @@
 package combination;
 
 /**
- * Created by byjumanikkan on 5/21/16.
+ * Created by deepak.kumar on 5/21/16.
  */
 public class Combination {
 

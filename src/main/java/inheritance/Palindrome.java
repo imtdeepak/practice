@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by byjumanikkan on 2/17/16.
+ * Created by deepak.kumar on 2/17/16.
  */
 public class Palindrome {
     private static volatile Palindrome instance = null;

@@ -3,7 +3,7 @@ package singleton;
 
 
 /**
- * Created by byjumanikkan on 2/19/16.
+ * Created by deepak.kumar on 2/19/16.
  */
 public class ConsumeSingleton {
     public static void main(String[] args) {

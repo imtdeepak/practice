@@ -1,7 +1,7 @@
 package datastructure;
 
 /**
- * Created by byjumanikkan on 2/24/16.
+ * Created by deepak.kumar on 2/24/16.
  */
 public class LinkedList<T> {
     private Node head;

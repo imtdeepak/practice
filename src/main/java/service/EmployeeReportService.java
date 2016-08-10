@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * Created by byjumanikkan on 2/18/16.
+ * Created by deepak.kumar on 2/18/16.
  */
 public interface EmployeeReportService {
     List<Employee> getAllEmployees(String departmentName);

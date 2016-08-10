@@ -2,7 +2,7 @@ package variables;
 import static java.lang.Math.abs;
 
 /**
- * Created by byjumanikkan on 3/10/16.
+ * Created by deepak.kumar on 3/10/16.
  */
 public class Variable {
 

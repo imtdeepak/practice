@@ -1,7 +1,7 @@
 package datastructure;
 
 /**
- * Created by byjumanikkan on 5/9/16.
+ * Created by deepak.kumar on 5/9/16.
  */
 public class KStack<T> {
     private final int k;

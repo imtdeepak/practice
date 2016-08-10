@@ -1,7 +1,7 @@
 package threads;
 
 /**
- * Created by byjumanikkan on 2/28/16.
+ * Created by deepak.kumar on 2/28/16.
  */
 public class DataHolder {
     private Integer value;
