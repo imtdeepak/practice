@@ -1,7 +1,7 @@
 package designpattern.observer;
 
 /**
- * Created by byjumanikkan on 2/2/16.
+ * Created by deepak.kumar on 2/2/16.
  */
 public class BinaryObserver extends Observer {
 

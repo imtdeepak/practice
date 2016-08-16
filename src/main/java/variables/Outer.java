@@ -1,7 +1,7 @@
 package variables;
 
 /**
- * Created by byjumanikkan on 5/17/16.
+ * Created by deepak.kumar on 5/17/16.
  */
 public class Outer {
 

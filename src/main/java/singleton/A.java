@@ -1,7 +1,7 @@
 package singleton;
 
 /**
- * Created by byjumanikkan on 4/27/16.
+ * Created by deepak.kumar on 4/27/16.
  */
 class B{
     static String s;

@@ -1,7 +1,7 @@
 package magic;
 
 /**
- * Created by byjumanikkan on 7/8/16.
+ * Created by deepak.kumar on 7/8/16.
  */
 public class MagicSquare {
 

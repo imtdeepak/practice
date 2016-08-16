@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collector;
 
 /**
- * Created by byjumanikkan on 1/28/16.
+ * Created by deepak.kumar on 1/28/16.
  */
 public class BubbleSortCollector implements Collector<Integer, List<Integer>, List<Integer>> {
     @Override

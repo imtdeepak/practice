@@ -1,7 +1,7 @@
 package singleton;
 
 /**
- * Created by byjumanikkan on 7/13/16.
+ * Created by deepak.kumar on 7/13/16.
  */
 public class DoubleCheckSingleton {
 

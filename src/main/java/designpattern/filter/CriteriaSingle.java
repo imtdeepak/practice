@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by byjumanikkan on 2/2/16.
+ * Created by deepak.kumar on 2/2/16.
  */
 public class CriteriaSingle implements Criteria {
     @Override

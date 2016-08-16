@@ -1,7 +1,7 @@
 package inheritance;
 
 /**
- * Created by byjumanikkan on 2/17/16.
+ * Created by deepak.kumar on 2/17/16.
  */
 public class Extend extends Base{
     @Override

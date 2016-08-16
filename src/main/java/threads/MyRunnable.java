@@ -3,7 +3,7 @@ package threads;
 import java.util.Random;
 
 /**
- * Created by byjumanikkan on 2/28/16.
+ * Created by deepak.kumar on 2/28/16.
  */
 public class MyRunnable implements Runnable {
     private static Random random = new Random();

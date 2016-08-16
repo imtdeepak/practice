@@ -1,7 +1,7 @@
 package designpattern.override;
 
 /**
- * Created by byjumanikkan on 2/12/16.
+ * Created by deepak.kumar on 2/12/16.
  */
 abstract class BaseAbstract {
     public void f() {
