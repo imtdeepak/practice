@@ -1,3 +1,4 @@
+package algo.problem;
 import java.util.Scanner;
 
 public class StarPrinter{
