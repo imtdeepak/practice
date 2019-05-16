@@ -9,7 +9,7 @@ public class StarPrinter{
 
         Scanner scanner= new Scanner(System.in);
         int inputInteger = scanner.nextInt();
-        scanner.
+//        scanner.
         String space="\t";
         for(int i=0;i<=inputInteger;i++){
             StringBuffer printBuffer=new StringBuffer();
