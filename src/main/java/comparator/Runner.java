@@ -36,7 +36,7 @@ public class Runner {
         System.out.println("After Sort with First Name");
         System.out.println(setOfStudents);
         Comparator<Student> lambdaWayCompLName = (s1, s2) -> {
-            return s1.getLName().compareTo(s2.getLName());
+            return s1.fName().compareTo(s2.lName());
         };
 
         Collections.sort(setOfStudents, lambdaWayCompLName);
