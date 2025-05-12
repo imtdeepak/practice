@@ -28,12 +28,16 @@ public class AbsentInRange {
     }
 
     public static void main(String[] args) {
-        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
-        int[] nums1 = new int[0];
-        int[] nums2 = {1, 1};
-        System.out.printf("Not Present number in %s :  %s%n", Arrays.toString(nums), findMissingNumbers(nums));
-        System.out.printf("Not Present number in %s :  %s%n", Arrays.toString(nums1), findMissingNumbers(nums1));
-        System.out.printf("Not Present number in %s :  %s%n", Arrays.toString(nums2), findMissingNumbers(nums2));
+        int[][] nums = {
+                {4, 3, 2, 7, 8, 2, 3, 1},
+                {},
+                {1, 1},
+                {1, 2, 4, 5, 6, 8, 9, 10},
+                {1, 2, 3, 4, 6, 7, 8, 9}
+        };
 
+        for(int[] num: nums) {
+            System.out.printf("Not Present number in %s :  %s%n", Arrays.toString(num), findMissingNumbers(num));
+        }
     }
 }
